@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Flag Quiz</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Master Flag Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Guess the Country</h1>
+    <div class="container">
+        <div id="game-container">
+            <h1>🌍 Flag Master</h1>
+            
+            <div class="stats-bar">
+                <span id="progress-text">Question: 1 / 25</span>
+                <span id="score-text">Score: 0</span>
+            </div>
 
-  <p id="loading">Loading game data...</p>
+            <div class="flag-box">
+                <img id="flag" alt="Flag" src="">
+            </div>
 
-  <img id="flag" alt="Country Flag" style="display: none;">
+            <div id="options" class="options-grid"></div>
 
-  <div id="options"></div>
+            <p id="message"></p>
+        </div>
 
-  <p id="result"></p>
+        <div id="end-screen" class="hidden">
+            <h1>🎉 Quiz Completed!</h1>
+            <p>Your Final Score:</p>
+            <h2 id="final-score">0 / 25</h2>
+            <p id="feedback-text"></p>
+            <button onclick="restartGame()" class="restart-btn">Play Again</button>
+        </div>
+    </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
