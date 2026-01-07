@@ -98,6 +98,12 @@ let score = 0;
 const TOTAL_QUESTIONS = 25;
 
 // Start the game initially
+function startGame() {
+    document.getElementById("start-screen").classList.add("hidden");
+    document.getElementById("game-container").classList.remove("hidden");
+    restartGame();
+}
+
 restartGame();
 
 function restartGame() {

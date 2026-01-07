@@ -7,9 +7,18 @@
 <body>
 
     <div class="container">
-        <div id="game-container">
-            <h1>Flag Quiz</h1>
-            
+        
+        <div id="start-screen">
+            <h1>🌍 World Flag Master</h1>
+            <p style="font-size: 18px; color: #555; margin-bottom: 30px;">
+                Are you a geography expert?<br>
+                Guess <strong>25 flags</strong> from around the world!<br>
+                Some are easy, some are impossible.
+            </p>
+            <button onclick="startGame()" class="restart-btn">Start Quiz</button>
+        </div>
+
+        <div id="game-container" class="hidden">
             <div class="stats-bar">
                 <span id="progress-text">Question: 1 / 25</span>
                 <span id="score-text">Score: 0</span>

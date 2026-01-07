@@ -92,3 +92,13 @@ button:hover {
     margin-top: 20px;
 }
 .restart-btn:hover { background-color: #5a6fd1; }
+
+.hidden {
+    display: none !important;
+}
+
+/* Optional: Make the text look nicer on the start screen */
+#start-screen h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
